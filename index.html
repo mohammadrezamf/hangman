@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <title>Hangman</title>
+</head>
+<body>
+<div class="container p-5 ">
+  <!-- timer -->
+  
+
+
+  <div class="class="w-50 m-5 p-5" style="background-color:aliceblue; border: 1px solid burlywood;">
+    <header>
+      <h1 class="float-left">Hangman</h1>
+    <!-- <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div> -->
+      <div id='countdown' class="float-right  mt-3" ></div>
+
+      <button class="btn btn-info float-right mx-2 mt-2"  onClick="reset()">start</button>
+    </header>
+    <main>
+        <div class="text-center mt-5">
+          <hr >
+          <img id='hangmanPic' src="./images/hm9.gif"  style="width: 100px; height: 200px;" alt="">
+          <p>Guess :</p>
+
+          <div id="keyboard"></div>
+          <p>Correct letter</p>
+          <div  class='d-flex justify-content-center'>
+          <p id="wordSpotlight" class="text-center  w-25 p-3" style="background-color: #eee;">The word to be guessed goes here</p>
+          </div>
+          <p>Wrong letter</p>
+          <div  class='d-flex justify-content-center'>
+          <div class="text-center  w-25 p-3" style="background-color: #eee;">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+        </div>
+    </main>
+    
+    
+
+    </div>
+  </div>
+   
+</div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
